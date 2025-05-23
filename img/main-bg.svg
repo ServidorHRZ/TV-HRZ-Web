@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="overlay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000033;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#000066;stop-opacity:0.9"/>
+    </linearGradient>
+    
+    <pattern id="moviePattern" width="200" height="200" patternUnits="userSpaceOnUse">
+      <rect width="180" height="100" x="10" y="10" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.1"/>
+      <circle cx="30" cy="30" r="8" fill="#ffffff" opacity="0.1"/>
+      <circle cx="170" cy="30" r="8" fill="#ffffff" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Fondo base con gradiente -->
+  <rect width="100%" height="100%" fill="url(#overlay)"/>
+  
+  <!-- Patrón de películas -->
+  <rect width="100%" height="100%" fill="url(#moviePattern)"/>
+  
+  <!-- Elementos decorativos -->
+  <g opacity="0.15">
+    <!-- Carretes de película -->
+    <circle cx="200" cy="200" r="100" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="1720" cy="880" r="100" fill="none" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Líneas dinámicas -->
+    <line x1="0" y1="300" x2="400" y2="500" stroke="#ffffff" stroke-width="1"/>
+    <line x1="1920" y1="780" x2="1520" y2="580" stroke="#ffffff" stroke-width="1"/>
+    
+    <!-- Estrellas brillantes -->
+    <g fill="#ffffff">
+      <circle cx="500" cy="200" r="2"/>
+      <circle cx="800" cy="400" r="2"/>
+      <circle cx="1200" cy="300" r="2"/>
+      <circle cx="1600" cy="600" r="2"/>
+      <circle cx="300" cy="800" r="2"/>
+    </g>
+  </g>
+  
+  <!-- Efecto de luz cinematográfico -->
+  <radialGradient id="spotlight" cx="50%" cy="0%" r="100%">
+    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.1"/>
+    <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#spotlight)"/>
+</svg>
